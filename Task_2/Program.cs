@@ -6,11 +6,15 @@ int firstNumber = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-if (firstNumber > secondNumber)
+if (firstNumber == secondNumber)
 {
-    Console.WriteLine("Первое ({0}) число больше второго ({1})", firstNumber, secondNumber);
+    Console.WriteLine("Два числа равны ({0}, {1}).", firstNumber, secondNumber);
+}
+else if (firstNumber > secondNumber)
+{
+    Console.WriteLine("Первое ({0}) число больше второго ({1}).", firstNumber, secondNumber);
 }
 else
 {
-    Console.WriteLine("Второе ({1}) число больше первого ({0})", firstNumber, secondNumber);
+    Console.WriteLine("Второе ({1}) число больше первого ({0}).", firstNumber, secondNumber);
 }

@@ -25,5 +25,5 @@ else
         count--;
     }
 }
-Console.Write("\b\b ");
+Console.WriteLine("\b\b.");
 
